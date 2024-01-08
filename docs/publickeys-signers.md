@@ -186,10 +186,10 @@ The `generateKeypair`, `createKeypairFromSeed` and `createKeypairFromSecretKey` 
 // Generate a new random keypair.
 const myKeypair = umi.eddsa.generateKeypair();
 
-// Restore a keypair using a seed.
+// Restore a keypair using a seed. Use this when your Private key looks like a array with Numbers (uint8).
 const myKeypair = umi.eddsa.createKeypairFromSeed(mySeed);
 
-// Restore a keypair using its secret key.
+// Restore a keypair using its secret key. Use this when your Private key looks like a string (base58).
 const myKeypair = umi.eddsa.createKeypairFromSecretKey(mySecretKey);
 ```
 
