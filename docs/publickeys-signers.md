@@ -196,7 +196,6 @@ const myKeypair = umi.eddsa.createKeypairFromSecretKey(mySecretKey);
 In order to use these keypairs as signers throughout your application, you can use the `createSignerFromKeypair` helper method. This method will return an instance of `KeypairSigner` to ensure that we can access the secret key when needed.
 
 ```ts
-const myKeypair = umi.eddsa.generateKeypair();
 const myKeypairSigner = createSignerFromKeypair(umi, myKeypair);
 ```
 
